@@ -3,8 +3,8 @@ def modulo11Checksum(ISBNNumber: str):
     digits = []
     for char in ISBNNumber:
         if char.isdigit():
-            digit.append(int(char))
-        elif (len(digit) == 9) and char == 'X':
+            digits.append(int(char))
+        elif (len(digits) == 9) and char == 'X':
             digits.append(10)
         elif char != '-' and char != ' ':
             return False
