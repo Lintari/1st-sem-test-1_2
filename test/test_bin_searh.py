@@ -13,7 +13,7 @@ def test_not_in_list():
     assert binSearch([1, 2, 3, 4], 5) == -1
 
 def test_wrong_type():
-    assert binSearch([1,2,3,4,5], 'a') == -1
+    assert binSearch([1,2,3,4,5], 'a') == 'wrong type'
 
 def test_end():
     assert binSearch([1,2,3,4,5],5) == 4
