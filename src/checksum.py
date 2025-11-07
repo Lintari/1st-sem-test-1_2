@@ -6,6 +6,8 @@ def modulo11Checksum(ISBNNumber: str):
 	    digit.append(int(char))
 	elif (len(digit) == 9) and char == 'X':
 	    digits.append(10)
+	elif char != '-' and char != ' ':
+	    return False
 	    
 
     if len(digits) != 10:
