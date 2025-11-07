@@ -1,4 +1,6 @@
 def binSearch(xs: list[int], x: int):
+    if type(x) != int:
+	return "wrong type"
     left, right = 0, len(xs) - 1
     while left < right:
         mid = (left + right) // 2
