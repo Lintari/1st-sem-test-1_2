@@ -1,6 +1,6 @@
 def modulo11Checksum(ISBNNumber: str):
 
-    digits = [int(char) for char in ISBNNumber if char.isdigit()]
+    digits = []
     for char in ISBNNumber:
         if char.isdigit():
             digit.append(int(char))
